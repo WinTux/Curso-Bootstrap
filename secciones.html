@@ -12,7 +12,7 @@
     <title>Página 4</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-md navbar-light"><!-- fixed-bottom bg-success navbar-dark-->
         <div class="container-xxl">
             <a href="#introduccion" class="navbar-brand">
                 <spam class="fw-bold text-secondary">Atún nacional Pepe's</spam>
@@ -37,10 +37,12 @@
                     <li class="nav-item">
                         <a href="#contacto" class="nav-link">Contáctate con Pepe's</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-md-none">
                         <a href="#precios" class="nav-link">Compra con Pepe's</a>
                     </li>
-                    <!-- Agregar una variante de botón para Compra -->
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a href="#precios" class="btn btn-secondary">Compra con Pepe's</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -59,6 +61,126 @@
                 </div>
                 <div class="col-md-5 text-center d-none d-md-block">
                     <img src="/resources/atun.jpg" alt="foto de atún Van camps" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="precios" class="bg-light mt-5">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Planes de pago</h2>
+                <p class="lead text-muted">Elija un plan de pago cómodo por docena</p>
+            </div>
+            <div class="row my-5 align-items-center justify-content-center"><!-- g-0 -->
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Económica</h4>
+                            <p class="lead card-subtitle">Pesca nacional</p>
+                            <p class="display-5 my-4 text-primary fw-bold">Bs. 100</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, consectetur.</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">Comprarlo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 col-lg-4">
+                    <div class="card border-2 border-primary">
+                        <div class="card-header text-center text-primary">Más consumido</div>
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Estándar</h4>
+                            <p class="lead card-subtitle">Pesca latinoamericana</p>
+                            <p class="display-5 my-4 text-primary fw-bold">Bs. 120</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, consectetur.</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">Comprarlo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Premium</h4>
+                            <p class="lead card-subtitle">Pesca importada</p>
+                            <p class="display-5 my-4 text-primary fw-bold">Bs. 220</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, consectetur.</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">Comprarlo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="acerca">
+        <div class="container-md">
+            <div class="text-center">
+                <h2>Detalles</h2>
+                <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, dolorem!</p>
+            </div>
+            <div class="row my-5 g-5 justify-content-around align-items-center">
+                <div class="col-6 col-lg-4">
+                    <img src="/resources/atun.jpg" alt="foto de atún Van camps" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion" id="elementos">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-1">
+                                <button class="accordion-button" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#parte-1"
+                                aria-expanded="true"
+                                aria-controls="parte-1">
+                                    Ingredientes
+                                </button>
+                            </h2>
+                            <div id="parte-1" class="accordion-collapse collapse show"
+                            aria-labelledby="heading-1"
+                            data-bs-parent="#elementos">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident velit id maiores eligendi sint sit? Officia dolores doloribus ad quo?</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error asperiores ipsam quaerat! Fugiat nulla asperiores aliquid dignissimos enim cumque porro.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-2">
+                                <button class="accordion-button" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#parte-2"
+                                aria-expanded="true"
+                                aria-controls="parte-2">
+                                    Ingredientes
+                                </button>
+                            </h2>
+                            <div id="parte-2" class="accordion-collapse collapse"
+                            aria-labelledby="heading-2"
+                            data-bs-parent="#elementos">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident velit id maiores eligendi sint sit? Officia dolores doloribus ad quo?</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error asperiores ipsam quaerat! Fugiat nulla asperiores aliquid dignissimos enim cumque porro.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-3">
+                                <button class="accordion-button" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#parte-3"
+                                aria-expanded="true"
+                                aria-controls="parte-3">
+                                    Ingredientes
+                                </button>
+                            </h2>
+                            <div id="parte-3" class="accordion-collapse collapse"
+                            aria-labelledby="heading-3"
+                            data-bs-parent="#elementos">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident velit id maiores eligendi sint sit? Officia dolores doloribus ad quo?</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error asperiores ipsam quaerat! Fugiat nulla asperiores aliquid dignissimos enim cumque porro.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
