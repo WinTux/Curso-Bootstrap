@@ -60,6 +60,10 @@
                     </h1>
                     <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     <a href="#precios" class="btn btn-secondary btn-lg">Comprar</a>
+                    <!-- offcanvas -->
+                    <a href="#barralateral" class="d-block mt-3"
+                    data-bs-toggle="offcanvas"
+                    role="button" aria-controls="sidebar">Nuestras variedades</a>
                 </div>
                 <div class="col-md-5 text-center d-none d-md-block">
                     <span class="mis-tooltips" data-bs-placement="bottom" title="Atún fresco">
@@ -348,6 +352,37 @@
                     <button class="btn btn-primary">Enviar</button>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="barralateral" class="offcanvas offcanvas-start"
+    tabindex="-1" aria-labelledby="label-barralateral"><!-- offcanvas-end offcanvas-top offcanvas-bottom -->
+        <div class="offcanvas-header">
+            <h5 id="label-barralateral" class="offcanvas-title">Nuestros otros productos</h5>
+            <button type="button" class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Cerrar"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Penguin yay one - Mapaches 2x1</p>
+            <div class="dropdown my-3">
+                <button id="dropdown-mapaches" class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown">Elija el plan Mapache</button>
+                <ul class="dropdown-menu"
+                aria-labelledby="dropdown-mapaches">
+                <li><a href="#" class="dropdown-item">Mapaches 2x1</a></li>
+                <li><a href="#" class="dropdown-item">Mapaches 3x2</a></li>
+                <li><a href="#" class="dropdown-item">Mapaches Happy Hour - Sábados</a></li>
+            </ul>
+            </div>
+            <img src="resources/dos.jpeg" alt="Mapaches 2x1" class="img-fluid">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, animi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <hr>
+            <p>Penguin yay two - Mapaches 3x2</p>
+            <img src="resources/tres.jpeg" alt="Mapaches 3x2" class="img-fluid">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, animi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
