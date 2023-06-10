@@ -1,0 +1,11 @@
+$primary: #9979c2;
+$secondary: #f4bfc9;
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+$expansion-theme-colors: (
+    "alertlight": #f691a4,
+    "alertdark":#d43b5c
+);
+$theme-colors: map-merge($expansion-theme-colors , $theme-colors );
+@import '../node_modules/bootstrap/scss/bootstrap';
